@@ -825,6 +825,35 @@
     display: block;
   }
 
+  /* IG DM Chat Bubble Styles */
+  .ig-dm-msg {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .ig-dm-msg-me {
+    justify-content: flex-end;
+  }
+  .ig-dm-bubble {
+    max-width: 80%;
+    padding: 8px 14px;
+    border-radius: 18px;
+    font-size: 12.5px;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+  .ig-dm-msg-me .ig-dm-bubble {
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    color: #FFFFFF;
+    border-bottom-right-radius: 4px;
+  }
+  .ig-dm-msg:not(.ig-dm-msg-me) .ig-dm-bubble {
+    background: #FFFFFF;
+    color: #262626;
+    border: 1px solid #EFEFEF;
+    border-bottom-left-radius: 4px;
+  }
 
 
   /* ============================================================
